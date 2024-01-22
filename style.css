@@ -112,44 +112,60 @@ font-size: 14px;
 }
 .container .form .input_field .check .checkmark
 {
-    width: 14px;
-    height: 14px;
-    border: 1px solid #D071F9 ;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #D071F9;
     display: block;
     position: relative;
-    background: #D071F9;
-
 }
+
 .container .form .input_field .check .checkmark:before
 {
-contain: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 5px;
-height: 2px;
-border: 2px solid;
-border-color: transparent transparent white white;
-/* transform: rotate(-45deg); */
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent white white;
+    transform: rotate(-45deg);
 
 }
-/* .container .form .input_field .check input[type="checkbox"]:checked ~ .checkmark
+.container .form .input_field .check input[type="checkbox"]:checked~ .checkmark
 {
-    background-color: red;
+    background-color: #D071F9;
 }
-.container .form .input_field .check input[type="checkbox"]:checked ~ .checkmark
- */
+.container .form .input_field .check input[type="checkbox"]:checked~ .checkmark:before
+{
+    display: block;
+}
+.container .form .input_field .btn
+{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #D071F9;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
 
+}
+.container .form .input_field:last-child
+{
+    margin-bottom: 0;
+}
 
-
-    
-
-
-
-
-
-
-
-
-
-
+.container .form .input_field .btn:hover
+{
+background: purple;
+}
+@media(max-width:420px)
+{
+    body
+    {
+        background: red;
+    }
+}

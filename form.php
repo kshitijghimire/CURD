@@ -38,8 +38,12 @@
                 </div>
             </div>
             <div class="input_field">
-                <label for="">Email</label>
+                <label for="">Email Address</label>
                 <input type="email" class="input">
+            </div>
+            <div class="input_field">
+                <label for="">Phone Number</label>
+                <input type="text" class="input">
             </div>
             <div class="input_field">
                 <label for="">Address</label>
@@ -53,7 +57,7 @@
                 <p>Agree to terms and conditions</p> 
             </div>
             <div class="input_field">
-                <input type="submit" value="register" class="btn">
+                <input type="submit" value="Register" class="btn">
             </div>
         </div>
     </div>
