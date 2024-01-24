@@ -19,23 +19,23 @@
         <div class="form">
             <div class="input_field">
                 <label for="">First Name</label>
-                <input type="text" class="input" name="fname" >
+                <input type="text" class="input" name="fname" required>
             </div>
             <div class="input_field">
                 <label for="">Last Name</label>
-                <input type="text" class="input" name="lname" >
+                <input type="text" class="input" name="lname" required>
             </div>
             <div class="input_field">
                 <label for="">Password</label>
-                <input type="password" class="input" name="password" >
+                <input type="password" class="input" name="password" required>
             </div><div class="input_field">
                 <label for="">Confirm Password</label>
-                <input type="password" class="input" name="conpassword" >
+                <input type="password" class="input" name="conpassword" required >
             </div><div class="input_field">
                 <label for="">Gender</label>
                 <div class="custom_select">
-             <select name="gender" >
-                <option value="NOt selected">Select</option>
+             <select name="gender" required>
+                <option value="">Select</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 </select>
@@ -43,19 +43,19 @@
             </div>
             <div class="input_field">
                 <label for="">Email Address</label>
-                <input type="email" class="input" name="email" >
+                <input type="email" class="input" name="email" required>
             </div>
             <div class="input_field">
                 <label for="">Phone Number</label>
-                <input type="text" class="input" name="phone" >
+                <input type="text" class="input" name="phone" required>
             </div>
             <div class="input_field">
                 <label for="">Address</label>
-                <textarea class="textarea" name="address" ></textarea>
+                <textarea class="textarea" name="address" required ></textarea>
             </div>
             <div class="input_field terms">
                 <label class="check">
-                <input type="checkbox">
+                <input type="checkbox" required>
                 <span class="checkmark"></span>
                 </label>
                 <p>Agree to terms and conditions</p> 
