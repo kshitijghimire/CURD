@@ -19,23 +19,23 @@
         <div class="form">
             <div class="input_field">
                 <label for="">First Name</label>
-                <input type="text" class="input" name="fname">
+                <input type="text" class="input" name="fname" >
             </div>
             <div class="input_field">
                 <label for="">Last Name</label>
-                <input type="text" class="input" name="lname">
+                <input type="text" class="input" name="lname" >
             </div>
             <div class="input_field">
                 <label for="">Password</label>
-                <input type="password" class="input" name="password">
+                <input type="password" class="input" name="password" >
             </div><div class="input_field">
                 <label for="">Confirm Password</label>
-                <input type="password" class="input" name="conpassword">
+                <input type="password" class="input" name="conpassword" >
             </div><div class="input_field">
                 <label for="">Gender</label>
                 <div class="custom_select">
-             <select name="gender">
-                <option value="Not Selected">Select</option>
+             <select name="gender" >
+                <option value="NOt selected">Select</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 </select>
@@ -43,11 +43,11 @@
             </div>
             <div class="input_field">
                 <label for="">Email Address</label>
-                <input type="email" class="input" name="email">
+                <input type="email" class="input" name="email" >
             </div>
             <div class="input_field">
                 <label for="">Phone Number</label>
-                <input type="text" class="input" name="phone">
+                <input type="text" class="input" name="phone" >
             </div>
             <div class="input_field">
                 <label for="">Address</label>
@@ -80,6 +80,12 @@ if($_POST['register'])
    $phone   = $_POST['phone'];
    $address = $_POST['address'];
 
+   if($fname != "" && $lname != "" && $pwd != "" && $cpwd != "" && 
+   $gender != "" && $email != "" && $phone != "" && $address != "" )
+   {
+
+   
+
    $query="INSERT INTO form VALUES('$fname','$lname','$pwd','$cpwd', '$gender','$email','$phone','$address')";
    $data =mysqli_query($conn,$query);
 
@@ -91,7 +97,13 @@ else
 {
     echo "Failed";
 }
+   
+}
 
+else
+{
+    echo   "<script> alert ('Fill the form first');</script>" ;
+}
 }
 
 ?>
