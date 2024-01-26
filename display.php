@@ -1,3 +1,28 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Display</title>
+    <style>
+body
+{
+    background: #d071f9;
+}
+table
+{
+    background-color: white;
+}
+    </style>
+</head>
+<body>
+    
+</body>
+
+
+
+
+
+
+
 <?php
 include("connection.php");
 error_reporting(0);
@@ -15,14 +40,16 @@ $total = mysqli_num_rows($data);
 if($total !=0)
 {
 ?>
-<table border="3">
+<center>
+<h2 align="center">  <mark>  Displaying All Records </mark></h2>
+<table border="3" cellspacing="7" width="85%">
     <tr>
-<th>First Name</th>
-<th>Last Name</th>
-<th>Gender</th>
-<th>Email</th>
-<th>Phone</th>
-<th>Address</th>
+<th  width="10%">First Name</th>
+<th  width="10%">Last Name</th>
+<th  width="10%">Gender</th>
+<th  width="20%">Email</th>
+<th  width="10%">Phone</th>
+<th  width="25%">Address</th>
     </tr>
 
 <?php
@@ -48,4 +75,5 @@ else
 
 ?>
 </table>
-        
+</center>
+</html>
