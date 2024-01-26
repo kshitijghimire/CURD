@@ -1,4 +1,9 @@
-<?php include("connection.php"); ?>
+<?php include("connection.php"); 
+// error_reporting(0);
+mysqli_connect_error();
+
+?>
+
 
 
 <!DOCTYPE html>
@@ -86,10 +91,12 @@ if($_POST['register'])
 
    
 
-   $query="INSERT INTO form VALUES('$fname','$lname','$pwd','$cpwd', '$gender','$email','$phone','$address')";
+   $query="INSERT INTO form (fname,lname,password,cpassword,gender,email,phone,address)
+   VALUES('$fname','$lname','$pwd','$cpwd', '$gender','$email','$phone','$address')";
    $data =mysqli_query($conn,$query);
 
 if($data)
+
 {
     echo "Data Inserted into Database";
 }

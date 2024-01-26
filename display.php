@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html >
+
 <head>
     <title>Display</title>
     <style>
@@ -13,27 +13,15 @@ table
 }
     </style>
 </head>
-<body>
-    
-</body>
-
-
-
-
-
-
 
 <?php
 include("connection.php");
-error_reporting(0);
+// error_reporting(0);
 
 $query ="SELECT * FROM form";
 
 $data = mysqli_query($conn,$query);
 $total = mysqli_num_rows($data);
-
-
-
 
 // echo $total;
 
@@ -43,6 +31,7 @@ if($total !=0)
 <center>
 <h2 align="center">  <mark>  Displaying All Records </mark></h2>
 <table border="3" cellspacing="7" width="85%">
+
     <tr>
 <th  width="10%">First Name</th>
 <th  width="10%">Last Name</th>
@@ -72,8 +61,6 @@ else
     echo "No records found";
 }
 
-
 ?>
 </table>
 </center>
-</html>
