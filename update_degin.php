@@ -109,15 +109,15 @@ if($_POST['update'])
 if($data)
 
 {
-    echo "Record Updated ";
-?>
+    echo "<script>alert('Record Update')</script>";
+    ?>
     <meta http-equiv = "refresh" content = "0; url = http://localhost/CURD/display.php" />
 
 <?php
 }
 else
 {
-    echo "Failed to update";
+   echo "Failed to update";
 }
    
 }

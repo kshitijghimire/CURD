@@ -11,6 +11,18 @@ table
 {
     background-color: white;
 }
+.Update
+{
+    background: green;
+    color: white;
+    border: 0;
+    outline: none;
+    border-radius: 3px;
+    height: 22px;
+    width: 80px;
+    font-weight: bold;
+    cursor: pointer;
+}
     </style>
 </head>
 
@@ -56,7 +68,10 @@ while( $result = mysqli_fetch_assoc($data))
                  <td>".$result['email']."</td>
                  <td>".$result['phone']."</td>
                  <td>".$result['address']."</td>C
-        <td> <a href='update_degin.php?id=$result[id]'>Update </a> </td>
+                <td> <a href='update_degin.php?id=$result[id]'> 
+                <input type='submit' value='Update' class='Update' >
+
+                </a> </td>
                  
                  
 
