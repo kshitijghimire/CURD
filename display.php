@@ -30,9 +30,10 @@ if($total !=0)
 ?>
 <center>
 <h2 align="center">  <mark>  Displaying All Records </mark></h2>
-<table border="3" cellspacing="7" width="85%">
+<table border="3" cellspacing="7" width="90%">
 
     <tr>
+<th  width="5%">ID</th>
 <th  width="10%">First Name</th>
 <th  width="10%">Last Name</th>
 <th  width="10%">Gender</th>
@@ -46,6 +47,7 @@ while( $result = mysqli_fetch_assoc($data))
 
     {
         echo "<tr>
+                 <td>".$result['id']."</td>
                  <td>".$result['fname']."</td>
                  <td>".$result['lname']."</td>
                  <td>".$result['gender']."</td>
