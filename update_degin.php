@@ -78,7 +78,7 @@ $result = mysqli_fetch_assoc($data);
                 <p>Agree to terms and conditions</p> 
             </div>
             <div class="input_field">
-                <input type="submit" value="Update" class="btn" name="register" >
+                <input type="submit" value="Update" class="btn" name="update" >
             </div>
         </div>
         </form>
@@ -86,7 +86,7 @@ $result = mysqli_fetch_assoc($data);
 </body>
 </html>
 <?php
-if($_POST['register'])
+if($_POST['update'])
 {
    $fname   = $_POST['fname'];
    $lname   = $_POST['lname'];
@@ -101,20 +101,19 @@ if($_POST['register'])
    $gender != "" && $email != "" && $phone != "" && $address != "" )
    {
 
-   
+   $query="UPDATE form  set fname='$fname',lname='$lname',password='$pwd',
+   cpassword='$cpwd',gender='$gender',email='$email',phone='$phone',address='$address' WHERE id='$id'";
 
-   $query="INSERT INTO form (fname,lname,password,cpassword,gender,email,phone,address)
-   VALUES('$fname','$lname','$pwd','$cpwd', '$gender','$email','$phone','$address')";
    $data =mysqli_query($conn,$query);
 
 if($data)
 
 {
-    echo "Data Inserted into Database";
+    echo "Data Updated into Database";
 }
 else
 {
-    echo "Failed";
+    echo "Failed to update";
 }
    
 }
