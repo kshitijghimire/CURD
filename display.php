@@ -56,7 +56,7 @@ while( $result = mysqli_fetch_assoc($data))
                  <td>".$result['email']."</td>
                  <td>".$result['phone']."</td>
                  <td>".$result['address']."</td>C
-        <td> <a href='update_degin.php?id=$result[id]&fn=$result[fname]&ln=$result[lname]&gen=$result[gender]&em=$result[email]&ph=$result[phone]&add=$result[address]'>Update </a> </td>
+        <td> <a href='update_degin.php?id=$result[id]'>Update </a> </td>
                  
                  
 
