@@ -109,7 +109,11 @@ if($_POST['update'])
 if($data)
 
 {
-    echo "Data Updated into Database";
+    echo "Record Updated ";
+?>
+    <meta http-equiv = "refresh" content = "0; url = http://localhost/CURD/display.php" />
+
+<?php
 }
 else
 {
