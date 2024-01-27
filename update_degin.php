@@ -18,7 +18,7 @@ error_reporting(0);
     <div class="container">
         <form action="#" method="POST">
         <div class="title">
-            Registration Form
+            Update Students details
         </div>
 
         <div class="form">
