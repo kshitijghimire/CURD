@@ -85,7 +85,7 @@ while( $result = mysqli_fetch_assoc($data))
                 <input type='submit' value='Update' class='Update' >
                 </a> 
                 <a href='delete.php?id=$result[id]'> 
-                <input type='submit' value='Delete' class='delete' >
+                <input type='submit' value='Delete' class='delete' onclick='return checkdelete()'>
                 </a> 
                 </td>
                  
@@ -103,3 +103,10 @@ else
 ?>
 </table>
 </center>
+<script>
+function checkdelete()
+{
+    return confirm('Are you sure you want to delete this recod?');
+}
+
+</script>
