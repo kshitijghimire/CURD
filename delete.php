@@ -6,10 +6,16 @@ $data=mysqli_query($conn,$query);
 
 if($data)
 {
-    echo "Record deleted";
+    echo "<script>alert('Record delete')</script>";
+
+    ?>
+    <meta http-equiv = "refresh" content = "0; url = http://localhost/CURD/display.php" />
+
+
+<?php
 }
 else
 {
-    echo "Not change";
+    echo "<script>alert('Failed to deleted')</script>";
 }
 ?>
